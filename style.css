@@ -1,0 +1,538 @@
+/* Règles CSS de base */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+
+.navbar {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: black;
+}
+
+.navbar .logo img {
+    height: 90px;
+    width: auto;
+    display: block; 
+}
+
+.navbar .menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    margin-left: 20px;
+    color: white;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .menu li .active {
+    border-bottom: 4px solid firebrick;
+}
+
+.navbar .menu li a:hover {
+    border-bottom: 4px solid firebrick;
+}
+
+.content {
+    background-image: url("Images/grouti.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% ;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #000;
+    height: 100vh;
+}
+
+.content h1 {
+    font-size: 45px;
+    color: beige;
+}
+
+.content p {
+    font-size: 25px;
+    margin-top: 20px;
+    color: beige;
+}
+
+.content button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border: none;
+    background: red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Section des Produits en Vedette */
+.featured-products {
+    padding: 50px 5%;
+    background-color: #f8f8f8;
+}
+
+.featured-products h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.product-card p {
+    margin-top: 10px;
+    color: #777;
+    font-size: 18px;
+}
+
+.product-card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: firebrick;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: darkred;
+}
+
+/* Section des Avis des Clients */
+.customer-reviews {
+    padding: 50px 5%;
+    background-color: #fff;
+}
+
+.customer-reviews h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.reviews-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background: #f8f8f8;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.review-card img {
+    max-width: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.review-card p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 5%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.footer-section ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #e6e6e6;
+}
+
+.footer-section .socials a {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #555;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+.about-content {
+    display: flex;
+    padding: 5% 10%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2em 0;
+}
+
+.about-text, .owner-info {
+    width: 50%;
+    padding: 1em;
+}
+
+.about-text h1 {
+    color: #e74c3c;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #2c3e50;
+}
+
+.owner-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.owner-info img {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.owner-info h2 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.owner-info p {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
+
+/* MEDIA QUERIES POUR RENDRE LE SITE RESPONSIVE */
+
+/* Petits écrans (smartphones) */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar .menu li {
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .content button {
+        padding: 10px 20px;
+    }
+
+    .product-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .reviews-grid {
+        flex-direction: column;
+    }
+
+    .review-card {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.produits_text{
+
+    text-align: center;
+    
+    font-size: 35px;
+    
+    font-weight: 310;
+    
+    margin-top: 30px;
+    
+    margin-left: 80px;
+    
+    color: #050405;
+    
+    }
+    
+    .section_produits{ 
+        padding: 40px 5%;
+        border-radius: 10px;
+
+    
+    }
+    .produits{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        border-radius: 10px;
+
+
+    }
+    .produits .carte{
+        width: 310px;
+        background: #f5f5f5;
+        border: 0 10px 20px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .produits .carte img{
+        height: 250px;
+        width: 100%;
+        border-radius: 10px;
+
+    }
+    .produits .carte .desc{
+        padding: 5px 20px;
+        opacity: 0.8;
+        font-size: 20px;
+        color: #34250e;
+    }
+    .produits .carte .titre{
+        font-weight: 900;
+        font-size: 20px;
+        color: #424144;
+        padding: 0px 20px;
+    }
+    .produits .carte .box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    .produits .carte .prix{
+        font-weight: bold;
+        font-size: 20px;
+        color: #f63e4e;
+    }
+    .produits .carte .achat{
+        font-weight: 900;
+        font-size: 13px;
+        color: #f63e4e;
+        padding: 10px 18px;
+        border-radius: 5px;
+    }
+    .produits .carte .box .achat:hover{
+        cursor: pointer;
+        background: #000;
+        color: white;
+    }
+
+
+
+
+
+
+   /* FAQ Section */
+.faq-section {
+    padding: 50px 5%;
+    background-color: #f8f8f8;
+    color: #333;
+}
+.faq-section h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+.faq details {
+    background-color: #fff;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+}
+.faq details summary {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: firebrick;
+    outline: none;
+}
+.faq details summary:hover {
+    color: darkred;
+}
+.faq details p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Footer enhancements */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 5%;
+    font-size: 18px;
+}
+.footer-section h3 {
+    color: firebrick;
+}
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-section ul li a:hover {
+    color: #e6e6e6;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #555;
+}
+
+
+/* Tablettes */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .navbar .menu li a {
+        font-size: 18px;
+    }
+
+    .product-card {
+        width: 48%;
+    }
+
+    .reviews-grid {
+        flex-direction: row;
+    }
+
+    .review-card {
+        width: 48%;
+    }
+}
+
+/* Grands écrans (ordinateurs de bureau) */
+@media only screen and (min-width: 1025px) {
+    .content h1 {
+        font-size: 50px;
+    }
+
+    .content p {
+        font-size: 28px;
+    }
+
+    .product-card {
+        width: 30%;
+    }
+
+    .review-card {
+        width: 30%;
+    }
+}
